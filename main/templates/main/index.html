@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for game in object_list %}
+        {{ game.name }}
+    {% empty %}
+        <p> No games yet </p>
+    {% endfor %}
+{% endblock %}
