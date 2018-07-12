@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import home, consoles, game_types, groups
+from .views import home, consoles, game_types, groups, users
 
 urlpatterns = [
     path(
@@ -93,5 +93,34 @@ urlpatterns += [
         'group/<int:pk>/delete',
         groups.GroupDeleteView.as_view(),
         name='group_delete'
+    )
+]
+
+# Adds group users urls
+urlpatterns += [
+    path(
+        'user',
+        users.UserListView.as_view(),
+        name='user_list'
+    ),
+    path(
+        'user/add',
+        users.UserAddView.as_view(),
+        name='user_add'
+    ),
+    path(
+        'user/<int:pk>',
+        users.UserShowView.as_view(),
+        name='user_show'
+    ),
+    path(
+        'user/<int:pk>/update',
+        users.UserUpdateView.as_view(),
+        name='user_edit'
+    ),
+    path(
+        'user/<int:pk>/delete',
+        users.UserDeleteView.as_view(),
+        name='user_delete'
     )
 ]

@@ -1,15 +1,6 @@
 from django.db import models
 
 
-class User(models.Model):
-    name = models.CharField(max_length=256)
-
-
-class Group(models.Model):
-    name = models.CharField(max_length=256)
-    users = models.ManyToManyField(User)
-
-
 class GameType(models.Model):
     name = models.CharField(max_length=256)
 

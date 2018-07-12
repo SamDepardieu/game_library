@@ -1,4 +1,4 @@
-from main.models import Group
+from django.contrib.auth.models import Group
 from django.views import generic
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
 
