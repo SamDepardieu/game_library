@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Console list{% endblock %}
+
+{% block content %}
+    {% for console in object_list %}
+        {{ console.name }}
+    {% empty %}
+        <p>No Console yet.</p>
+    {% endfor %}
+{% endblock %}
