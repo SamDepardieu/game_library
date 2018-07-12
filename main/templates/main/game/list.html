@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Game list{% endblock %}
+
+{% block content %}
+    {% for game in object_list %}
+        {{ game.name }}
+    {% empty %}
+        <p>No Game yet.</p>
+    {% endfor %}
+{% endblock %}
