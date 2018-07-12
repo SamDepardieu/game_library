@@ -1,0 +1,25 @@
+{
+  "name": "my_game_lib",
+  "version": "0.0.1",
+  "description": "Web interface to manage game collections",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamDepardieu/my_game_lib.git"
+  },
+  "keywords": [
+    "python",
+    "django",
+    "node",
+    "npm"
+  ],
+  "author": "SamDepardieu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamDepardieu/my_game_lib/issues"
+  },
+  "homepage": "https://github.com/SamDepardieu/my_game_lib#readme"
+}
